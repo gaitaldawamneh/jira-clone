@@ -8,7 +8,7 @@
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 - Written in modern React, only functional components with hooks
 - the styling is not sorted well like using sass
-- the styling is not sorted well like using sass
+- very tricky ways using styled-components has been learned(adv:1-track of which components and injects their styles 2-unique class names 3-every bit of styling is tied to a specific component)
   
 <h1 align="center">A simplified Jira clone built with React and Node</h1>
 
