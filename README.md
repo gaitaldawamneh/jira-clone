@@ -1,15 +1,15 @@
 <h1 align="center">Notes to be taken from this project:</h1>
-<h6 align="center">keep in mind that this project has been taken just in order to take notes from it.<fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
-  the syling is not sorted well like using sass
-  
-  
-  </h6>
-## Features
+<h6 align="center">keep in mind that this project has been taken just in order to take notes from it.
+ 
 
-- Proven, scalable, and easy to understand project structure
+</h6>
+## what i learned from this project:
+
+- <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 - Written in modern React, only functional components with hooks
-
-
+- the styling is not sorted well like using sass
+- the styling is not sorted well like using sass
+  
 <h1 align="center">A simplified Jira clone built with React and Node</h1>
 
 <div align="center">Auto formatted with Prettier, tested with Cypress 🎗</div>
