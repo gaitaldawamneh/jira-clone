@@ -9,7 +9,8 @@
 - Written in modern React, only functional components with hooks
 - the styling is not sorted well like using sass
 - very tricky ways using styled-components has been learned(adv:1-track of which components and injects their styles 2-unique class names 3-every bit of styling is tied to a specific component)
-- i read about ECMAScript to understand the errors like (Cannot use import statement outside a module) and differents between ECMAScript and the javascripts
+- i read about ECMAScript to understand the errors like (Cannot use import statement outside a module) and differents between ECMAScript and the javascripts (CommonJS is a module formatting system). Succinctly, Node.js as a platform provides an environment outside of the traditional web browser for executing JavaScript code (It's important to note here that Node.js was created for building network applications using JavaScript).
+ 
  
   
 <h1 align="center">A simplified Jira clone built with React and Node</h1>
