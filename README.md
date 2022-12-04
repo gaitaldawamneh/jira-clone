@@ -14,6 +14,7 @@
 ## techniques I learned:
  - publish/subscribe pattern
  - A transition component
+ - The toast is in the app file so must be alwaysshown in during surfing the routes
 ## functions I learned:
  - setTimeout, uniqueId
  
