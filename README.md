@@ -20,6 +20,7 @@
  - history.(functions)
 ## functions created I learned:
  queryStringToObject,objectToQueryString
+ smooth way of functions exporting in createQueryParamModalHelpers.js
  
  
  
