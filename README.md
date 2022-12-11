@@ -21,7 +21,8 @@
 ## functions created I learned:
  queryStringToObject,objectToQueryString
  smooth way of functions exporting in createQueryParamModalHelpers.js
- 
+ handling the unreached data: (!data) return <PageLoader />;
+ handling the error situation if (error) return <PageError />;
  
  
   # different between ESmodules and commonjs practically:
