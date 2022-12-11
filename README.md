@@ -17,7 +17,7 @@
  - The toast is in the app file so must be alwaysshown in during surfing the routes
 ## functions I learned:
  - setTimeout, uniqueId, queryString.parse, omit,stringify,querystring.stringify(produce an URL query string)
- 
+ - history.(functions)
 ## functions created I learned:
  queryStringToObject,objectToQueryString
  
