@@ -12,6 +12,7 @@
 - i read about ECMAScript to understand the errors like (Cannot use import statement outside a module) and differents between ECMAScript and the javascripts (CommonJS is a module formatting system). Succinctly, Node.js as a platform provides an environment outside of the traditional web browser for executing JavaScript code (It's important to note here that Node.js was created for building network applications using JavaScript). CommonJS is a module formatting system. It is a standard for structuring and organizing JavaScript code. CJS assists in the server-side development of apps and it’s format has heavily influenced NodeJS’s module management.
  
 ## techniques I learned:
+ - dealing with history thing history.location.search.path
  - publish/subscribe pattern
  - A transition component
  - The toast is in the app file so must be alwaysshown in during surfing the routes
