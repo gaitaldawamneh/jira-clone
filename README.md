@@ -14,7 +14,8 @@
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
-  - import without writing js
+ - how to add typescripts to your project by (npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest)
+ - import without writing js
  - createRoot(the purpose is to Render an app fully built with React)
  - StrictMode (React Developer Tool)(highlighting potential problems in an application)
 ## techniques I learned:
