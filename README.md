@@ -13,10 +13,11 @@
 - Color from 'color' and how to use it (darken, tostring )
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
- 
-## techniques I learned:
+## basics I learned:
+  - import without writing js
  - createRoot(the purpose is to Render an app fully built with React)
  - StrictMode (React Developer Tool)(highlighting potential problems in an application)
+## techniques I learned:
  - dealing with history thing history.location.search.path
  - publish/subscribe pattern
  - A transition component
