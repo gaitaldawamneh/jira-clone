@@ -31,7 +31,8 @@
  smooth way of functions exporting in createQueryParamModalHelpers.js
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
- 
+## scripts i used:
+ npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest (to install type scripts)
  
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
