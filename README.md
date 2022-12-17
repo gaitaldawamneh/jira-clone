@@ -4,7 +4,7 @@
 
 </h6>
 ## what i learned from this project:
-
+- createGlobalStyle from styled-components
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 - Written in modern React, only functional components with hooks
 - the styling is not sorted well like using sass
