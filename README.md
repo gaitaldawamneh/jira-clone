@@ -4,12 +4,15 @@
 
 </h6>
 ## what i learned from this project:
-- createGlobalStyle from styled-components
-- <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
+
 - Written in modern React, only functional components with hooks
 - the styling is not sorted well like using sass
 - very tricky ways using styled-components has been learned(adv:1-track of which components and injects their styles 2-unique class names 3-every bit of styling is tied to a specific component)
 - i read about ECMAScript to understand the errors like (Cannot use import statement outside a module) and differents between ECMAScript and the javascripts (CommonJS is a module formatting system). Succinctly, Node.js as a platform provides an environment outside of the traditional web browser for executing JavaScript code (It's important to note here that Node.js was created for building network applications using JavaScript). CommonJS is a module formatting system. It is a standard for structuring and organizing JavaScript code. CJS assists in the server-side development of apps and it’s format has heavily influenced NodeJS’s module management.
+## useful libraries:
+- Color from 'color'
+- createGlobalStyle from styled-components
+- <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
  
 ## techniques I learned:
  - createRoot(the purpose is to Render an app fully built with React)
