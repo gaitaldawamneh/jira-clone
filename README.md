@@ -1,7 +1,9 @@
 <h1 align="center">Notes to be taken from this project:</h1>
 <h6 align="center">keep in mind that this project has been taken just in order to take notes from it.
  
-
+npx create-react-app ghaith-clone-2
+npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
+ 
 </h6>
 ## what i learned from this project:
 
@@ -19,6 +21,7 @@
  - createRoot(the purpose is to Render an app fully built with React)
  - StrictMode (React Developer Tool)(highlighting potential problems in an application)
 ## techniques I learned:
+ - useRef in api 
  - dealing with history thing history.location.search.path
  - publish/subscribe pattern
  - A transition component
