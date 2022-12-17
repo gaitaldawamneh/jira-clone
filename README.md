@@ -5,6 +5,14 @@ npx create-react-app ghaith-clone-2
 npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
  
 </h6>
+
+## preparing for typescripts:
+   #scripts: 
+    - tcs (file_name)  
+    - create config file tsc --init
+   
+   
+
 ## what i learned from this project:
 
 - Written in modern React, only functional components with hooks
