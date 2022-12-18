@@ -11,6 +11,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
     - the next() funtiong and what it does
     - the .use function and what function it takes, every thing that is implemented inside the .use will be runing and adds a new middleware.
     - .all for all http methods
+    - .route (chaining requests)
+    - putting * in a path
     - the miiddleware runs in sequence
     - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
     - basic responding techniques (res.json, res.redirect)
