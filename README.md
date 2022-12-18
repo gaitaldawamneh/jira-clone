@@ -6,7 +6,9 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  
 </h6>
 ## backend bsics requirments:
-
+    - express middleware concept
+    - the next() funtiong and what it does
+    - the .use function and what function it takes
 
 ## preparing for typescripts:
    #scripts: 
