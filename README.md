@@ -8,7 +8,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 
 
 
-## backend bsics requirments:
+## backend bsics reqs:
     - express middleware concept
     - the next() funtiong and what it does
     - Cross-Origin Resource Sharing (CORS)(Resource Sharing policy, prevents accessing web          resources from sources other than the server the website is running        on for                      security      purposes.)
