@@ -13,6 +13,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    - the next() funtiong and what it does
    - Cross-Origin Resource Sharing (CORS)(Resource Sharing policy, prevents accessing web          resources from sources other than the server the website is running        on for                      security      purposes.)
    - Origin is defined by the scheme (protocol), hostname (domain), and port
+   - express.unencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called app.use(express.urlencoded());
    - the .use function and what function it takes, every thing that is implemented inside the      .use will be runing and adds a new middleware.
    - .all for all http methods
    - .route (chaining requests)
