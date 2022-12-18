@@ -24,6 +24,9 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ 
+ 
+ - Async/await
  - how to add typescripts to your project by (npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest)
  - import without writing js
  - createRoot(the purpose is to Render an app fully built with React)
