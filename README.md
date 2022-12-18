@@ -15,8 +15,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 ## preparing for typescripts:
    #scripts: 
     - tcs (file_name)  
-    - create config file tsc --init
-   
+    - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
+    - running script (tsc-node-dev ts_file_name)
    
 
 ## what i learned from this project:
