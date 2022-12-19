@@ -20,8 +20,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    - .all for all http methods
    - .route (chaining requests) and how to implement it in the middle ware file, and adjust it due to process.env(dev, test )
      to facilitate the testing process
-   - putting * in a path
-   - the miiddleware runs in sequence
+   - in the middleware pathes putting * inside a the path url (for example user* thing) as in the place of * may come any thing else.
+   - the middleware runs in sequence
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
    - basic responding techniques (res.json, res.redirect)
 
