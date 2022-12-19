@@ -14,7 +14,6 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    - Cross-Origin Resource Sharing (CORS)(Resource Sharing policy, prevents accessing web          resources from sources other than the server the website is running        on for                      security      purposes.)
    - Origin is defined by the scheme (protocol), hostname (domain), and port
    - express.unencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called app.use(express.urlencoded());
-
    - catching errors stratigy, putting the async func inside another one that does the (try:) in the errors.ts file 
    - the .use function and what function it takes, every thing that is implemented inside the      .use will be runing and adds a new middleware.
    - .all for all http methods
@@ -22,6 +21,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
      to facilitate the testing process
    - in the middleware pathes putting * inside a the path url (for example user* thing) as in the place of * may come any thing else.
    - the middleware runs in sequence
+   - TypeORM - Entity:
+   
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
    - basic responding techniques (res.json, res.redirect)
 
