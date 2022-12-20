@@ -24,8 +24,15 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    - TypeORM - Entity:
    
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
-   - basic responding techniques (res.json, res.redirect)
-
+   - basic responding techniques (res.json, res.redirect
+   .send() {its own built-in headers natively}
+   .status(){set a HTTP status code}
+   .sendStatus() {adapt both the .status() and .send() methods}
+   .redirect() {directing the client side to a different page}
+   .render() method accepts an HTML file as an argument
+   .sendFile{second argument is an options variable, sets an error handler as the third. it sends the files stored in the public directory to the client-side.
+   .type() {res object it passes a file type as an argument
+   .respond is set to a function as a responding action
 ## preparing for typescripts:
    #scripts: 
     - tcs (file_name)  
