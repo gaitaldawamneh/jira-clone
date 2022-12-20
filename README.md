@@ -22,7 +22,11 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    - in the middleware pathes putting * inside a the path url (for example user* thing) as in the place of * may come any thing else.
    - the middleware runs in sequence
    - TypeORM - Entity: it is an ORM(Object–relational mapping) used with TypeScript and JavaScript (ES5, ES6, ES7, ES8)
-   
+   - create QueryBuilder ways(DataSource, entity manager, repository)
+   createQueryBuilder 
+   - extending with the BaseEntity class
+   getOneOrFail (single result), if no result throw an EntityNotFoundError), getOne(single result), getMany,"SUM(), AND, .andWhere, .orWhere, .having, .orderBy(,"DESC"/"ASC"), .addOrderBy{multiple order-by criteria}
+   - 
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
    - basic responding techniques (res.json, res.redirect
    .send() {its own built-in headers natively}
