@@ -35,6 +35,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .respond is set to a function as a responding action
 ## preparing for typescripts:
    #scripts: 
+    - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
     - tcs (file_name)  
     - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
     - running script (tsc-node-dev ts_file_name)
