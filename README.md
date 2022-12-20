@@ -32,7 +32,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .render() method accepts an HTML file as an argument
    .sendFile{second argument is an options variable, sets an error handler as the third. it sends the files stored in the public directory to the client-side.
    .type() {res object it passes a file type as an argument
-   .respond is set to a function as a responding action
+   .respond is set to a function as a responding action(created be namespace)
 ## preparing for typescripts:
    #scripts: 
     - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
