@@ -21,7 +21,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
      to facilitate the testing process
    - in the middleware pathes putting * inside a the path url (for example user* thing) as in the place of * may come any thing else.
    - the middleware runs in sequence
-   - TypeORM - Entity:
+   - TypeORM - Entity: it is an ORM(Object–relational mapping) used with TypeScript and JavaScript (ES5, ES6, ES7, ES8)
    
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
    - basic responding techniques (res.json, res.redirect
@@ -35,6 +35,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .respond is set to a function as a responding action(created be namespace)
 ## preparing for typescripts:
    #scripts: 
+    - Type Assertion or casting(<>)
     - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
     - tcs (file_name)  
     - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
