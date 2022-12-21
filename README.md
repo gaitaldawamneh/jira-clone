@@ -38,8 +38,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .type() {res object it passes a file type as an argument
    .respond is set to a function as a responding action(created by namespace as interface)
 ## preparing for typescripts:
-   #scripts: 
-    - <T>typescripts Generics declaration
+   #scripts:
+    - <T>typescripts Generics declaration (any non-declared variable)
     - void (annotate the return type explicitly to void)(used if no data to return)
     - The static members of a class are accessed using the class name and dot notation
     - Type Assertion or casting(<>)
