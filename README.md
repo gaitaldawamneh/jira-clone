@@ -55,7 +55,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
     - running script (tsc-node-dev ts_file_name)
     - Promise<void> nice to learn the promise but we put the void as it will not return any data
     - a class in type script after compiling how it would looks in javascript
-
+    - type
 ## what i learned from this project:
 
 - Written in modern React, only functional components with hooks
@@ -83,7 +83,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  - setTimeout, uniqueId, queryString.parse, omit,stringify,querystring.stringify(produce an URL query string),useRouteMatch()
  - history.(functions)
 ## functions created I learned:
- queryStringToObject,objectToQueryString
+ queryStringToObject,objectToQueryString,isNilOrEmptyString(undefined situations: null, undefined,''(string)),
  smooth way of functions exporting in createQueryParamModalHelpers.js
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
