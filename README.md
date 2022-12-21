@@ -26,7 +26,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    createQueryBuilder 
    - extending with the BaseEntity class
    getOneOrFail (single result), if no result throw an EntityNotFoundError), getOne(single result), getMany,"SUM(), AND, .andWhere, .orWhere, .having, .orderBy(,"DESC"/"ASC"), .addOrderBy{multiple order-by criteria}
-   - 
+   
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
    - basic responding techniques (res.json, res.redirect
    .send() {its own built-in headers natively}
@@ -39,6 +39,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .respond is set to a function as a responding action(created by namespace as interface)
 ## preparing for typescripts:
    #scripts: 
+    - void (annotate the return type explicitly to void)
     - The static members of a class are accessed using the class name and dot notation
     - Type Assertion or casting(<>)
     - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
