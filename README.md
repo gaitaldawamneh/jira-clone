@@ -41,6 +41,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
   - important initializing params:(logging, synchronize)
   - @entity
   - @column
+## typescripts errors:
+ - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## preparing for typescripts:
    #scripts:
     - <T>typescripts Generics declaration (any non-declared variable)
