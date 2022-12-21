@@ -48,6 +48,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
     - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
     - running script (tsc-node-dev ts_file_name)
     - Promise<void> nice to learn the promise but we put the void as it will not return any data
+    - a class in type script after compiling how it would looks in javascript
 
 ## what i learned from this project:
 
