@@ -37,6 +37,10 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .sendFile{second argument is an options variable, sets an error handler as the third. it sends the files stored in the public directory to the client-side.
    .type() {res object it passes a file type as an argument
    .respond is set to a function as a responding action(created by namespace as interface)
+## TypeORM:
+  - important initializing params:(logging, synchronize)
+  - @entity
+  - @column
 ## preparing for typescripts:
    #scripts:
     - <T>typescripts Generics declaration (any non-declared variable)
