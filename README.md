@@ -47,7 +47,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
     - tcs (file_name)  
     - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
     - running script (tsc-node-dev ts_file_name)
-   
+    - Promise<void> nice to learn the promise but we put the void as it will not return any data
 
 ## what i learned from this project:
 
