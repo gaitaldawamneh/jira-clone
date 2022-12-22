@@ -45,7 +45,9 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## preparing for typescripts:
    #scripts:
-    - installing the typescripts(npm install typescript tslint --save-dev, tsc --init, npm i @types/express @types/node --save-dev)
+    -(npx tsc --init, touch src/app.ts{create new file})
+    - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
+    - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
     - <T>typescripts Generics declaration (any non-declared variable)
     - void (annotate the return type explicitly to void)(used if no data to return)
     - The static members of a class are accessed using the class name and dot notation
