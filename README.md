@@ -16,7 +16,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    - express.unencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called app.use(express.urlencoded());
    - catching errors stratigy, putting the async func inside another one that does the (try:) in the errors.ts file 
    - the .use function and what function it takes, every thing that is implemented inside the      .use will be runing and adds a new middleware.
-   - .all for all http methods
+   - .all listens for all http methods
    - .route (chaining requests) and how to implement it in the middle ware file, and adjust it due to process.env(dev, test )
      to facilitate the testing process
    - in the middleware pathes putting * inside a the path url (for example user* thing) as in the place of * may come any thing else.
