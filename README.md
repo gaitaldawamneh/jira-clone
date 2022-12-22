@@ -39,6 +39,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .respond is set to a function as a responding action(created by namespace as interface)
 ## TypeORM:
   - important initializing params:(logging, synchronize, reconnectInterval, reconnectTries, entities:[], migrations:[], cli:[])
+  - A migration is just a single file with sql queries to update a database schema and apply new changes to an existing database.
   - @entity
   - @column
 ## typescripts errors:
