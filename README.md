@@ -93,7 +93,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
 ## javascripts basics:
- - path.extname(), .includes()
+ - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
  ESmodules:(standarize how JS modules work and implement this features in browsers (which didn't previously support modules).)
