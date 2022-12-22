@@ -44,21 +44,23 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## preparing for typescripts:
-   #scripts:
-    -(npx tsc --init, touch src/app.ts{create new file})
-    - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
-    - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
-    - <T>typescripts Generics declaration (any non-declared variable)
-    - void (annotate the return type explicitly to void)(used if no data to return)
-    - The static members of a class are accessed using the class name and dot notation
-    - Type Assertion or casting(<>)
-    - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
-    - tcs (file_name)  
-    - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
-    - running script (tsc-node-dev ts_file_name)
-    - Promise<void> nice to learn the promise but we put the void as it will not return any data
-    - a class in type script after compiling how it would looks in javascript
-    - type
+
+  - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
+  -(npx tsc --init, touch src/app.ts{create new file})
+  - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
+  - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
+    
+  - <T>typescripts Generics declaration (any non-declared variable)
+  - void (annotate the return type explicitly to void)(used if no data to return)
+  - The static members of a class are accessed using the class name and dot notation
+  - Type Assertion or casting(<>)
+  - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
+  - tcs (file_name)  
+  - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
+  - running script (tsc-node-dev ts_file_name)
+  - Promise<void> nice to learn the promise but we put the void as it will not return any data
+  - a class in type script after compiling how it would looks in javascript
+  - type
 ## what i learned from this project:
 
 - Written in modern React, only functional components with hooks
@@ -90,9 +92,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  smooth way of functions exporting in createQueryParamModalHelpers.js
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
-## scripts i used:
- npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest (to install type scripts)
- 
+
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
  ESmodules:(standarize how JS modules work and implement this features in browsers (which didn't previously support modules).)
