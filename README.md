@@ -38,7 +38,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
    .type() {res object it passes a file type as an argument
    .respond is set to a function as a responding action(created by namespace as interface)
 ## TypeORM:
-  - important initializing params:(logging, synchronize, reconnectInterval, reconnectTries)
+  - important initializing params:(logging, synchronize, reconnectInterval, reconnectTries, entities:[], migrations:[], cli:[])
   - @entity
   - @column
 ## typescripts errors:
