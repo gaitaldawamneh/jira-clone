@@ -80,7 +80,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
  - learning how to remove errors if the errors newly appear with no reason.(uninstalling amnd then installing the dependincies)
- - nodemon(automatically restarting the node application when file changes in the directory are detected.)
+ - nodemon(automatically restarting the node application when file changes in the directory are detected.)(must installed globally)
+  -(nodemon --watch)(nodemon.json{ignore,ext,watch,env,execMap})
  - package-lock.json (It stores an exact, versioned dependency tree)
  - SERVER TESTING: describe, test and expect (for testing){set env variable: NODE_OPTIONS=--experimental-vm-modules npx jest}
  - Async/await backend (await makes JavaScript wait)
