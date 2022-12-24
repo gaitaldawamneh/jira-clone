@@ -49,7 +49,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
   - npm ci (uninstall and then install)
   - npm install -g ts-node(install as global)(is not recognized as an internal or external command)
   - npm ERR! code EJSONPARSE(npm install {ts-node --save-dev,typescript -g,typescript --save-dev })
-  
+  - npm install pg --save(to install postgresql)
 ## preparing for typescripts:
 
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
