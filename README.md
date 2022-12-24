@@ -78,6 +78,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - package-lock.json (It stores an exact, versioned dependency tree)
  - SERVER TESTING: describe, test and expect (for testing){set env variable: NODE_OPTIONS=--experimental-vm-modules npx jest}
  - Async/await backend (await makes JavaScript wait)
  - how to add typescripts to your project by (npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest)
