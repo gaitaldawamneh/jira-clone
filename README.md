@@ -47,10 +47,9 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 ## scripts to learn:
   - npm install --force
   - npm ci (uninstall and then install)
-  - learning how to remove errors if the errors newly appear with no reason.
   - npm install -g ts-node(install as global)(is not recognized as an internal or external command)
   - npm ERR! code EJSONPARSE(npm install {ts-node --save-dev,typescript -g,typescript --save-dev })
-
+  
 ## preparing for typescripts:
 
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
@@ -80,6 +79,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - learning how to remove errors if the errors newly appear with no reason.(uninstalling amnd then installing the dependincies)
+ - nodemon(automatically restarting the node application when file changes in the directory are detected.)
  - package-lock.json (It stores an exact, versioned dependency tree)
  - SERVER TESTING: describe, test and expect (for testing){set env variable: NODE_OPTIONS=--experimental-vm-modules npx jest}
  - Async/await backend (await makes JavaScript wait)
