@@ -46,6 +46,9 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
   - npm install --force
+  - npm ci (uninstall and then install)
+  - learning how to remove errors if the errors newly appear with no reason.
+  - 
 ## preparing for typescripts:
 
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
