@@ -44,6 +44,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
   - @column
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
+## scripts to learn:
+  - npm install --force
 ## preparing for typescripts:
 
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
@@ -93,7 +95,8 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  smooth way of functions exporting in createQueryParamModalHelpers.js
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
-## javascripts basics:
+## java
+ipts basics:
  - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
