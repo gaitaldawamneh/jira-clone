@@ -48,7 +48,9 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
   - npm install --force
   - npm ci (uninstall and then install)
   - learning how to remove errors if the errors newly appear with no reason.
-  - 
+  - npm install -g ts-node(install as global)(is not recognized as an internal or external command)
+  - npm ERR! code EJSONPARSE(npm install {ts-node --save-dev,typescript -g,typescript --save-dev })
+
 ## preparing for typescripts:
 
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
