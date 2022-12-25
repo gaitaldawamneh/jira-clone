@@ -2,7 +2,7 @@
 <h6 align="center">keep in mind that this project has been taken just in order to take notes from it.
  
 npx create-react-app ghaith-clone-2
-npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
+
  
 </h6>
 
@@ -45,6 +45,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
+  - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
   - npm install --force
   - npm ci (uninstall and then install)
   - npm install -g ts-node(install as global)(is not recognized as an internal or external command)
