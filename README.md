@@ -103,8 +103,7 @@ npm install --save-dev typescript @types/node @types/react @types/react-dom @typ
  smooth way of functions exporting in createQueryParamModalHelpers.js
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
-## java
-ipts basics:
+## javascripts basics:
  - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
@@ -113,6 +112,8 @@ ipts basics:
 - import {} export {} from (ESmodules) not to forget you must put the type:module in the package.json
  export default mod1Function => import dh from 
  export {dh} => import {dh} from 
+## github basics:
+- git remote -v(showing the origins)(if you have dev and master we can run git push dev master)
 <h1 align="center">A simplified Jira clone built with React and Node</h1>
 
 <div align="center">Auto formatted with Prettier, tested with Cypress 🎗</div>
