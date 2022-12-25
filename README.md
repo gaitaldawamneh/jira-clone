@@ -80,6 +80,7 @@ npx create-react-app ghaith-clone-2
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - require('dotenv').config(){for the .env to works because i faced problems with it }
  - learning how to remove errors if the errors newly appear with no reason.(uninstalling amnd then installing the dependincies)
  - nodemon(automatically restarting the node application when file changes in the directory are detected.)(must installed globally)
   -(nodemon --watch)(nodemon.json{ignore,ext,watch,env,execMap})
