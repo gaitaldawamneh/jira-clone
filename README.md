@@ -7,13 +7,15 @@ npx create-react-app ghaith-clone-2
 </h6>
 
 
-
-## backend basics reqs:
+## nice assembly techniques : 
+   -
+## backend basics reqs learning:
    - express middleware concept
    - the next() funtiong and what it does
    - Cross-Origin Resource Sharing (CORS)(Resource Sharing policy, prevents accessing web          resources from sources other than the server the website is running        on for                      security      purposes.)
    - Origin is defined by the scheme (protocol), hostname (domain), and port
    - express.unencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called app.use(express.urlencoded());
+   - express.json() {it parses the incoming requests with JSON payloads and is based upon the bodyparser. This method returns the middleware that only parses JSON and only looks at the requests where the content-type header matches the type option.}
    - catching errors stratigy, putting the async func inside another one that does the (try:) in the errors.ts file 
    - the .use function and what function it takes, every thing that is implemented inside the      .use will be runing and adds a new middleware.
    - .all listens for all http methods
