@@ -11,6 +11,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 ## nice assembly techniques : 
    -
 ## backend basics reqs learning:
+   - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
    - the next() funtiong and what it does
    - Cross-Origin Resource Sharing (CORS)(Resource Sharing policy, prevents accessing web          resources from sources other than the server the website is running        on for                      security      purposes.)
