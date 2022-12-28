@@ -49,6 +49,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
+  - npm install --save @types/lodash (know how to install something for typescripts)
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
   - npm install --force
