@@ -47,6 +47,7 @@ npx create-react-app ghaith-clone-2
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
+  - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
   - npm install --force
   - npm ci (uninstall and then install)
@@ -55,7 +56,7 @@ npx create-react-app ghaith-clone-2
   - npm install pg --save(to install postgresql)
 ## preparing for typescripts:
 
-  - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
+  
   -(npx tsc --init, touch src/app.ts{create new file})
   - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
   - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
