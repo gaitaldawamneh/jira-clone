@@ -82,6 +82,7 @@ npx create-react-app ghaith-clone-2
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - --save option instructed NPM to include the package inside of the dependencies section of your package.json(for npm 5.0.0and above, installed modules are added as a    dependency by default, so the --save option is no longer needed)
  - @alias tag (it causes JSDoc to treat all references to a member as if the member had a different name.){(alias) usage}
  - .urlencoded({extended: true}) precises that the req.body object will contain values of any type instead of just strings.
  - require('dotenv').config(){for the .env to works because i faced problems with it }
