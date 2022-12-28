@@ -6,6 +6,7 @@ npx create-react-app ghaith-clone-2
  
 </h6>
 
+this project especially the API part did not work, I analyzed the reason, and at the end, the database was not connecting so I merged two projects and two package.json files until it worked, it was an extreme experience to manipulate the two projects, and get out with one project even though a lot of errors faced me but I thrived on solving and make the project works, with learning what I was the face of code.
 
 ## nice assembly techniques : 
    -
