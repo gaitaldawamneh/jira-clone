@@ -10,7 +10,8 @@ this project especially the API part did not work, I analyzed the reason, and at
 
 ## nice assembly techniques : 
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
-   -initializeExpress(){express,cor}
+   -initializeExpress(){express,cor,json,urlencoded,}
+   -use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
 ## backend basics reqs learning:
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
