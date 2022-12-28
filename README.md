@@ -9,14 +9,15 @@ npx create-react-app ghaith-clone-2
 this project especially the API part did not work, I analyzed the reason, and at the end, the database was not connecting so I merged two projects and two package.json files until it worked, it was an extreme experience to manipulate the two projects, and get out with one project even though a lot of errors faced me but I thrived on solving and make the project works, with learning what I was the face of code.
 
 ## nice assembly techniques : 
-   -
+   - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
+   -initializeExpress(){express,cor}
 ## backend basics reqs learning:
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
    - the next() funtiong and what it does
    - Cross-Origin Resource Sharing (CORS)(Resource Sharing policy, prevents accessing web          resources from sources other than the server the website is running        on for                      security      purposes.)
    - Origin is defined by the scheme (protocol), hostname (domain), and port
-   - express.unencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called app.use(express.urlencoded());
+   - express.unencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called app.use(express,urlencoded());
    - express.json() {it parses the incoming requests with JSON payloads and is based upon the bodyparser. This method returns the middleware that only parses JSON and only looks at the requests where the content-type header matches the type option.}
    - catching errors stratigy, putting the async func inside another one that does the (try:) in the errors.ts file 
    - the .use function and what function it takes, every thing that is implemented inside the      .use will be runing and adds a new middleware.
@@ -86,6 +87,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - express.urlencoded() It parses incoming requests with urlencoded payloads and is based on body-parser.
  - --save option instructed NPM to include the package inside of the dependencies section of your package.json(for npm 5.0.0and above, installed modules are added as a    dependency by default, so the --save option is no longer needed)
  - @alias tag (it causes JSDoc to treat all references to a member as if the member had a different name.){(alias) usage}
  - .urlencoded({extended: true}) precises that the req.body object will contain values of any type instead of just strings.
