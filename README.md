@@ -72,7 +72,7 @@ npx create-react-app ghaith-clone-2
   - a class in type script after compiling how it would looks in javascript
   - type
 ## what i learned from this project:
-
+- module-alias/register
 - Written in modern React, only functional components with hooks
 - the styling is not sorted well like using sass but in a new technique that i like and learned in details
 - very tricky ways using styled-components has been learned(adv:1-track of which components and injects their styles 2-unique class names 3-every bit of styling is tied to a specific component)
