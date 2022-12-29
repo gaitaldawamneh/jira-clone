@@ -11,11 +11,13 @@ this project especially the API part did not work, I analyzed the reason, and at
 
 ## nice assembly techniques : 
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
-   -initializeExpress(){express,cor,json,urlencoded,}
-   -use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
-   -catchErrors takes a function of RequestHandler interface and return the latter.
- 
+   - initializeExpress(){express,cor,json,urlencoded,}
+   - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
+   - catchErrors takes a function of RequestHandler interface and return the latter.
+   - not forgetting to put next for the middleware going to the next functions.
+   - 
 ## backend basics reqs learning:
+   - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
    - the next() funtiong and what it does
