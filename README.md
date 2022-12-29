@@ -15,7 +15,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
-   - 
+   - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js.
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
@@ -92,6 +92,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ 
  - express.urlencoded() It parses incoming requests with urlencoded payloads and is based on body-parser.
  - --save option instructed NPM to include the package inside of the dependencies section of your package.json(for npm 5.0.0and above, installed modules are added as a    dependency by default, so the --save option is no longer needed)
  - @alias tag (it causes JSDoc to treat all references to a member as if the member had a different name.){(alias) usage}
@@ -122,6 +123,7 @@ this project especially the API part did not work, I analyzed the reason, and at
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
 ## javascripts basics:
+ -The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
  - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
