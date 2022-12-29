@@ -8,11 +8,13 @@ npx create-react-app ghaith-clone-2
 
 this project especially the API part did not work, I analyzed the reason, and at the end, the database was not connecting so I merged two projects and two package.json files until it worked, it was an extreme experience to manipulate the two projects, and get out with one project even though a lot of errors faced me but I thrived on solving and make the project works, with learning what I was the face of code.
 
+
 ## nice assembly techniques : 
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
    -initializeExpress(){express,cor,json,urlencoded,}
    -use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
-   -
+   -catchErrors takes a function of RequestHandler interface and return the latter.
+ 
 ## backend basics reqs learning:
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
@@ -33,7 +35,6 @@ this project especially the API part did not work, I analyzed the reason, and at
    createQueryBuilder 
    - extending with the BaseEntity class
    getOneOrFail (single result), if no result throw an EntityNotFoundError), getOne(single result), getMany,"SUM(), AND, .andWhere, .orWhere, .having, .orderBy(,"DESC"/"ASC"), .addOrderBy{multiple order-by criteria}
-   
    - classifying middleware, for example, running a function (auth(req,res,next)) before a .get app.get('/users', auth, (req, res) => {
    - basic responding techniques (res.json, res.redirect
    .send() {its own built-in headers natively}
