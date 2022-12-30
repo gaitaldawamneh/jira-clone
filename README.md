@@ -108,6 +108,7 @@ this project especially the API part did not work, I analyzed the reason, and at
  - import without writing js
  - createRoot(the purpose is to Render an app fully built with React)
  - StrictMode (React Developer Tool)(highlighting potential problems in an application)
+ - lodash functions(.pick(), )
 ## techniques I learned:
  - useRef in api 
  - dealing with history thing history.location.search.path
