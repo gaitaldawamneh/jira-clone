@@ -15,7 +15,8 @@ this project especially the API part did not work, I analyzed the reason, and at
    - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
-   - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js.
+   - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js,RouteNotFoundError as a class constructs {message,code,status,data={}}{extrend Error{{name;message;stack?:}
+   - in a row thew handleError function comes with a type of ErrorRequestHandler
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
