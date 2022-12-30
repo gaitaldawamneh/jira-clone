@@ -65,8 +65,6 @@ this project especially the API part did not work, I analyzed the reason, and at
   - npm ERR! code EJSONPARSE(npm install {ts-node --save-dev,typescript -g,typescript --save-dev })
   - npm install pg --save(to install postgresql)
 ## preparing for typescripts:
-
-  
   -(npx tsc --init, touch src/app.ts{create new file})
   - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
   - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
@@ -93,7 +91,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
- 
+ - console.error It prints to stderr with newline
  - express.urlencoded() It parses incoming requests with urlencoded payloads and is based on body-parser.
  - --save option instructed NPM to include the package inside of the dependencies section of your package.json(for npm 5.0.0and above, installed modules are added as a    dependency by default, so the --save option is no longer needed)
  - @alias tag (it causes JSDoc to treat all references to a member as if the member had a different name.){(alias) usage}
