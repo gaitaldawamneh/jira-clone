@@ -10,9 +10,12 @@ this project especially the API part did not work, I analyzed the reason, and at
 ##  authentication errors:
    - Authentication token not found(no token)
    - Authentication token is invalid(false result when varifying the token)
-   - Authentication token is invalid: User not found. (no userid) 
-## database learned things:
+   - Authentication token is invalid: User not found. (no userid)
+## typescripts utils:
 
+## database learned things:
+   - extending the entity class BaseEntity to its methods.
+   - 
 ## nice assembly techniques :
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
    - initializeExpress(){express,cor,json,urlencoded,}
