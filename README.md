@@ -24,7 +24,10 @@ this project especially the API part did not work, I analyzed the reason, and at
    - the authentication (Bearer authentication) (token authentication) process starts with req.get('Authorization') getting the header then the bearer and token, if no token then it will throw an error.
    - if no token or no userid, it will throw an error.
    - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
-   - findone() from user table in the database
+   - findone() from user table in the database.
+   - setting the req.currentUser = user; then next() of course.
+ 
+ 
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
