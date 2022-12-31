@@ -16,6 +16,9 @@ this project especially the API part did not work, I analyzed the reason, and at
 ## database learned things:
    - many-to-many relations is where A contains multiple instances of B
    - extending the entity class BaseEntity to its methods.
+   - One-to-one is a relation where A contains only one instance of B, and B contains only one instance of A
+   - third parameters{onDelete:'CASCADE'} delete in one side if the other one is deleted in case.
+   - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
    - 
 ## nice assembly techniques :
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
