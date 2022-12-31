@@ -15,8 +15,9 @@ this project especially the API part did not work, I analyzed the reason, and at
    - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
-   - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js,RouteNotFoundError as a class constructs {message,code,status,data={}}{extrend Error{{name;message;stack?:}
+   - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js,putting RouteNotFoundError in the next method, RouteNotFoundError as a class constructs {message,code,status,data={}}{extrend Error{{name;message;stack?:}
    - in a row thew handleError function comes with a type of ErrorRequestHandler
+   - the authentication process starts with req.get('Authorization') getting the header then the bearer and token
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
@@ -91,6 +92,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - A request header is an HTTP header, used in an HTTP request to provide information about the request context, so that the server can tailor the response.
  - instanceof operator is used to check the type of an object at the run time
  - console.error It prints to stderr with newline
  - express.urlencoded() It parses incoming requests with urlencoded payloads and is based on body-parser.
