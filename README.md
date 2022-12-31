@@ -102,6 +102,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - The req.get() function returns the specified HTTP request header field
  - Using throw with try and catch, lets you control program flow and generate custom error messages.
  - plain object in JS is An Object created by literal notation or new Object, 
 An Object created by literal notation or new Object
