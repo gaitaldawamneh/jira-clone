@@ -17,7 +17,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - not forgetting to put next for the middleware going to the next functions.
    - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js,putting RouteNotFoundError in the next method, RouteNotFoundError as a class constructs {message,code,status,data={}}{extrend Error{{name;message;stack?:}
    - in a row thew handleError function comes with a type of ErrorRequestHandler
-   - the authentication process starts with req.get('Authorization') getting the header then the bearer and token
+   - the authentication (Bearer authentication) (token authentication) process starts with req.get('Authorization') getting the header then the bearer and token
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
