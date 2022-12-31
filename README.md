@@ -12,8 +12,9 @@ this project especially the API part did not work, I analyzed the reason, and at
    - Authentication token is invalid(false result when varifying the token)
    - Authentication token is invalid: User not found. (no userid)
 ## typescripts utils:
-
+   
 ## database learned things:
+   - many-to-many relations is where A contains multiple instances of B
    - extending the entity class BaseEntity to its methods.
    - 
 ## nice assembly techniques :
