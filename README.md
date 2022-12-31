@@ -10,7 +10,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 
 ## database learned things:
 
-## nice assembly techniques : 
+## nice assembly techniques :
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
    - initializeExpress(){express,cor,json,urlencoded,}
    - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
@@ -20,6 +20,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - in a row thew handleError function comes with a type of ErrorRequestHandler
    - the authentication (Bearer authentication) (token authentication) process starts with req.get('Authorization') getting the header then the bearer and token, if no token then it will throw an error.
    - if no token or no userid, it will throw an error.
+   - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
