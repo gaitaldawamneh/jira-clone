@@ -12,7 +12,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - Authentication token is invalid(false result when varifying the token)
    - Authentication token is invalid: User not found. (no userid)
 ## typescripts utils:
-   
+   - validation util is super smart, it has been done with multiple arrow functions.
 ## database learned things:
    - many-to-many relations is where A contains multiple instances of B
    - extending the entity class BaseEntity to its methods.
@@ -86,7 +86,6 @@ this project especially the API part did not work, I analyzed the reason, and at
   -(npx tsc --init, touch src/app.ts{create new file})
   - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
   - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
-    
   - <T>typescripts Generics declaration (any non-declared variable)
   - void (annotate the return type explicitly to void)(used if no data to return)
   - The static members of a class are accessed using the class name and dot notation
@@ -109,6 +108,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - The static members of a class are accessed using the class name and dot notation
  - multiple arrow functions
  - @Get, @Injectable (we use it with service class to make it Injectable to the controller class), @Module, @controller.
  - @Req(){access to the client request details}, @HttpCode() {changing the response status code}, @Header(){specify a custom response header}, @Redirect{redirecting a response to a specific URL}, @Body(){determining the DTO (Data Transfer Object) schema}
