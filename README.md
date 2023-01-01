@@ -108,6 +108,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - Enums allow a developer to define a set of named constants.
  - The static members of a class are accessed using the class name and dot notation
  - multiple arrow functions
  - @Get, @Injectable (we use it with service class to make it Injectable to the controller class), @Module, @controller.
