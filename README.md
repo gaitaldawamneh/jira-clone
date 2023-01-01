@@ -21,7 +21,6 @@ this project especially the API part did not work, I analyzed the reason, and at
    - One-to-one is a relation where A contains only one instance of B, and B contains only one instance of A
    - third parameters{onDelete:'CASCADE'} delete in one side if the other one is deleted in case.
    - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
-   - 
 ## nice assembly techniques :
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
    - initializeExpress(){express,cor,json,urlencoded,}
@@ -35,7 +34,6 @@ this project especially the API part did not work, I analyzed the reason, and at
    - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database.
    - setting the req.currentUser = user; then next() of course.
- 
  
 ## backend basics reqs learning:
    - req.originalUrl retains the original request
@@ -74,8 +72,12 @@ this project especially the API part did not work, I analyzed the reason, and at
   - @entity
   - @column
 ## typescripts basics:
- - Utility Types In TypeScript: ()
- - Partial creates a new type with all properties of the specified Type set to **optional**
+ - Utility<Type> Types In TypeScript: ()
+ - Partial<Type> creates a new type with all properties of the specified Type set to **optional**
+ - Required<Type> with all properties of the specified Type set to required.
+ - Readonly<Type> cannot be reassigned after initialization
+ - Record<Keys, Type> creates a new type whose property keys are Keys and values are Type (type Type = Record<"x" | "y", string>;)
+ - 
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
