@@ -14,6 +14,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 ## typescripts utils:
    - validation util is super smart, it has been done with multiple arrow functions.
 ## database learned things:
+   - implementing the static validations(that hs multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
    - many-to-many relations is where A contains multiple instances of B
    - extending the entity class BaseEntity to its methods.
