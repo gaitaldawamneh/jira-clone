@@ -72,6 +72,8 @@ this project especially the API part did not work, I analyzed the reason, and at
   - @entity
   - @column
 ## typescripts basics:
+ - The implementation of generics in Typescript, Generic Interfaces
+ - 'T' is going to be a type declared at run-time
  - Utility<Type> Types In TypeScript: ()
  - Partial<Type> creates a new type with all properties of the specified Type set to **optional**
  - Required<Type> with all properties of the specified Type set to required.
