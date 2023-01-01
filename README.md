@@ -73,6 +73,9 @@ this project especially the API part did not work, I analyzed the reason, and at
   - A migration is just a single file with sql queries to update a database schema and apply new changes to an existing database.
   - @entity
   - @column
+## typescripts basics:
+ - Utility Types In TypeScript: ()
+ - Partial creates a new type with all properties of the specified Type set to **optional**
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
