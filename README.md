@@ -14,6 +14,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 ## typescripts utils:
    - validation util is super smart, it has been done with multiple arrow functions.
 ## database learned things:
+   - using enums for database, (Enums allow a developer to define a set of named constants).
    - many-to-many relations is where A contains multiple instances of B
    - extending the entity class BaseEntity to its methods.
    - One-to-one is a relation where A contains only one instance of B, and B contains only one instance of A
