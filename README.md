@@ -109,6 +109,9 @@ this project especially the API part did not work, I analyzed the reason, and at
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 ## basics I learned:
+ - @Get, @Injectable (we use it with service class to make it Injectable to the controller class), @Module, @controller.
+ - @Req(){access to the client request details}, @HttpCode() {changing the response status code}, @Header(){specify a custom response header}, @Redirect{redirecting a response to a specific URL}, @Body(){determining the DTO (Data Transfer Object) schema}
+ - 
  - The req.get() function returns the specified HTTP request header field
  - Using throw with try and catch, lets you control program flow and generate custom error messages.
  - plain object in JS is An Object created by literal notation or new Object, 
