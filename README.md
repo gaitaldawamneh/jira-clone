@@ -155,7 +155,8 @@ An Object created by literal notation or new Object
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
 ## javascripts basics:
- -The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+ - Object.values(){array of a given object's own enumerable string-keyed property values}
+ - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
  - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
