@@ -83,11 +83,13 @@ this project especially the API part did not work, I analyzed the reason, and at
  - The implementation of generics in Typescript, Generic Interfaces
  - 'T' is going to be a type declared at run-time
  - Utility<Type> Types In TypeScript: ()
- - Partial<Type> creates a new type with all properties of the specified Type set to **optional**
+ - Partial<Type> creates a new type with all properties of the specified Type set to **optional**, for example const updateUser = (user: User, fields: Partial<User>): User
  - Required<Type> with all properties of the specified Type set to required.
  - Readonly<Type> cannot be reassigned after initialization
  - Record<Keys, Type> creates a new type whose property keys are Keys and values are Type (type Type = Record<"x" | "y", string>;)
- - 
+ - Pick<Type, Keys>, creates a new type by selecting the specified set of properties Keys from Type.
+ - ReturnType<Type>, constructs a type of the return type of the function Type
+ - InstanceType<Type>, constructs a type consistof the instance type of a constructor function in Type.
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 ## scripts to learn:
