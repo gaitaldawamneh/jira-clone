@@ -7,12 +7,15 @@ npx create-react-app ghaith-clone-2
 </h6>
 
 this project especially the API part did not work, I analyzed the reason, and at the end, the database was not connecting so I merged two projects and two package.json files until it worked, it was an extreme experience to manipulate the two projects, and get out with one project even though a lot of errors faced me but I thrived on solving and make the project works, with learning what I was the face of code.
+
 ##  authentication errors:
    - Authentication token not found(no token)
    - Authentication token is invalid(false result when varifying the token)
    - Authentication token is invalid: User not found. (no userid)
+
 ## typescripts utils:
    - validation util is super smart, it has been done with multiple arrow functions.
+
 ## database learned things:
    - implementing the static validations(that hs multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
@@ -21,6 +24,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - One-to-one is a relation where A contains only one instance of B, and B contains only one instance of A
    - third parameters{onDelete:'CASCADE'} delete in one side if the other one is deleted in case.
    - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
+
 ## nice assembly techniques :
    - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
    - initializeExpress(){express,cor,json,urlencoded,}
@@ -66,11 +70,33 @@ this project especially the API part did not work, I analyzed the reason, and at
    .sendFile{second argument is an options variable, sets an error handler as the third. it sends the files stored in the public directory to the client-side.
    .type() {res object it passes a file type as an argument
    .respond is set to a function as a responding action(created by namespace as interface)
+
 ## TypeORM:
   - important initializing params:(logging, synchronize, reconnectInterval, reconnectTries, entities:[], migrations:[], cli:[])
   - A migration is just a single file with sql queries to update a database schema and apply new changes to an existing database.
   - @entity
   - @column
+
+## preparing for typescripts:
+  - Unlike an interface, the type alias can also be used for other types such as primitives, unions, and tuples.
+  - interface can extend a type or an interface
+  - interface and the type describe the shape of an object but the syntax differs, interface S{(x:number,y:number):void;} type S = (x: number, y: number) => void; , interface S { x: number; y: number; }, type S = { x: number; y: number; };
+  - Declaration merging uniqueness for interface, for example, interface P { x: number; } interface P { y: number; } const o: P = { x: 1, y: 2 };
+  -(npx tsc --init, touch src/app.ts{create new file})
+  - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
+  - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
+  - <T>typescripts Generics declaration (any non-declared variable)
+  - void (annotate the return type explicitly to void)(used if no data to return)
+  - The static members of a class are accessed using the class name and dot notation
+  - Type Assertion or casting(<>)
+  - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
+  - tcs (file_name)  
+  - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
+  - running script (tsc-node-dev ts_file_name)
+  - Promise<void> nice to learn the promise but we put the void as it will not return any data
+  - a class in type script after compiling how it would looks in javascript
+  - type
+  
 ## typescripts basics:
  - ensure type properties exist, for example function identity<T>(arg: T): T { console.log(arg.length); return arg; }
  - Explicitly supporting arrays function identity<T>(arg: T[]): T[] { console.log(arg.length); return arg; }
@@ -90,8 +116,10 @@ this project especially the API part did not work, I analyzed the reason, and at
  - Pick<Type, Keys>, creates a new type by selecting the specified set of properties Keys from Type.
  - ReturnType<Type>, constructs a type of the return type of the function Type
  - InstanceType<Type>, constructs a type consistof the instance type of a constructor function in Type.
+
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
+
 ## scripts to learn:
   - npm install --save @types/lodash (know how to install something for typescripts)
   - npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest @types/express -D (to install type scripts)
@@ -101,35 +129,21 @@ this project especially the API part did not work, I analyzed the reason, and at
   - npm install -g ts-node(install as global)(is not recognized as an internal or external command)
   - npm ERR! code EJSONPARSE(npm install {ts-node --save-dev,typescript -g,typescript --save-dev })
   - npm install pg --save(to install postgresql)
-## preparing for typescripts:
-  - Unlike an interface, the type alias can also be used for other types such as primitives, unions, and tuples.
-  - interface can extend a type or an interface
-  - interface and the type describe the shape of an object but the syntax differs, interface S{(x:number,y:number):void;} type S = (x: number, y: number) => void; , interface S { x: number; y: number; }, type S = { x: number; y: number; };
-  
-  -(npx tsc --init, touch src/app.ts{create new file})
-  - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
-  - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
-  - <T>typescripts Generics declaration (any non-declared variable)
-  - void (annotate the return type explicitly to void)(used if no data to return)
-  - The static members of a class are accessed using the class name and dot notation
-  - Type Assertion or casting(<>)
-  - Namespaces (a TypeScript-specific way to organize code.) (.d.ts)
-  - tcs (file_name)  
-  - create config file (tsc --init)(npx tsc --init)(tsc-node-dev)
-  - running script (tsc-node-dev ts_file_name)
-  - Promise<void> nice to learn the promise but we put the void as it will not return any data
-  - a class in type script after compiling how it would looks in javascript
-  - type
+
+
+
 ## what i learned from this project:
 - module-alias/register
 - Written in modern React, only functional components with hooks
 - the styling is not sorted well like using sass but in a new technique that i like and learned in details
 - very tricky ways using styled-components has been learned(adv:1-track of which components and injects their styles 2-unique class names 3-every bit of styling is tied to a specific component)
 - i read about ECMAScript to understand the errors like (Cannot use import statement outside a module) and differents between ECMAScript and the javascripts (CommonJS is a module formatting system). Succinctly, Node.js as a platform provides an environment outside of the traditional web browser for executing JavaScript code (It's important to note here that Node.js was created for building network applications using JavaScript). CommonJS is a module formatting system. It is a standard for structuring and organizing JavaScript code. CJS assists in the server-side development of apps and it’s format has heavily influenced NodeJS’s module management.
+
 ## useful libraries:
 - Color from 'color' and how to use it (darken, tostring )
 - styled-components(createGlobalStyle)
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
+
 ## basics I learned:
  - Enums allow a developer to define a set of named constants.
  - The static members of a class are accessed using the class name and dot notation
@@ -161,20 +175,24 @@ An Object created by literal notation or new Object
  - createRoot(the purpose is to Render an app fully built with React)
  - StrictMode (React Developer Tool)(highlighting potential problems in an application)
  - lodash functions(.pick(), )
+
 ## techniques I learned:
  - useRef in api 
  - dealing with history thing history.location.search.path
  - publish/subscribe pattern
  - A transition component
  - The toast is in the app file so must be alwaysshown in during surfing the routes
+
 ## functions I learned:
  - setTimeout, uniqueId, queryString.parse, omit,stringify,querystring.stringify(produce an URL query string),useRouteMatch()
  - history.(functions)
+
 ## functions created I learned:
  queryStringToObject,objectToQueryString,isNilOrEmptyString(undefined situations: null, undefined,''(string)),
  smooth way of functions exporting in createQueryParamModalHelpers.js
  handling the unreached data: (!data) return <PageLoader />;
  handling the error situation if (error) return <PageError />;
+
 ## javascripts basics:
  - Object.values(){array of a given object's own enumerable string-keyed property values}
  - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
@@ -186,6 +204,7 @@ An Object created by literal notation or new Object
 - import {} export {} from (ESmodules) not to forget you must put the type:module in the package.json
  export default mod1Function => import dh from 
  export {dh} => import {dh} from 
+
 ## github basics:
 - git remote -v(showing the origins)(if you have dev and master we can run git push dev master)
 <h1 align="center">A simplified Jira clone built with React and Node</h1>
