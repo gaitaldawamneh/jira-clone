@@ -102,6 +102,10 @@ this project especially the API part did not work, I analyzed the reason, and at
   - npm ERR! code EJSONPARSE(npm install {ts-node --save-dev,typescript -g,typescript --save-dev })
   - npm install pg --save(to install postgresql)
 ## preparing for typescripts:
+  - Unlike an interface, the type alias can also be used for other types such as primitives, unions, and tuples.
+  - interface can extend a type or an interface
+  - interface and the type describe the shape of an object but the syntax differs, interface S{(x:number,y:number):void;} type S = (x: number, y: number) => void; , interface S { x: number; y: number; }, type S = { x: number; y: number; };
+  
   -(npx tsc --init, touch src/app.ts{create new file})
   - in the scripts field inside the package.json(dev: ts-node-dev ts_file_name)
   - to rerun after save the ts file we add(dev: ts-node-dev --respawn --transpile-only ts_file_name)
