@@ -116,7 +116,8 @@ this project especially the API part did not work, I analyzed the reason, and at
  - Pick<Type, Keys>, creates a new type by selecting the specified set of properties Keys from Type.
  - ReturnType<Type>, constructs a type of the return type of the function Type
  - InstanceType<Type>, constructs a type consistof the instance type of a constructor function in Type.
-
+ - Key Mapping, type Getters<T> = { [K in keyof T as `get${Capitalize<K & string>}`]: () => T[K]; };
+ 
 ## typescripts errors:
  - from tsconfig.json()comenting out the ("experimentaldecorators" : true)
 
