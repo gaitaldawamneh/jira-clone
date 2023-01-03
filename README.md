@@ -187,6 +187,7 @@ An Object created by literal notation or new Object
  - The toast is in the app file so must be alwaysshown in during surfing the routes
 
 ## functions I learned:
+ -Object.entries(obj).forEach(([fieldName or the key, the key value])=>
  - setTimeout, uniqueId, queryString.parse, omit,stringify,querystring.stringify(produce an URL query string),useRouteMatch()
  - Object.keys().length
  - history.(functions)
