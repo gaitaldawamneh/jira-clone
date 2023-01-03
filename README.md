@@ -78,6 +78,7 @@ this project especially the API part did not work, I analyzed the reason, and at
   - @column
 
 ## preparing for typescripts:
+
   - Unlike an interface, the type alias can also be used for other types such as primitives, unions, and tuples.
   - interface can extend a type or an interface
   - interface and the type describe the shape of an object but the syntax differs, interface S{(x:number,y:number):void;} type S = (x: number, y: number) => void; , interface S { x: number; y: number; }, type S = { x: number; y: number; };
@@ -98,6 +99,7 @@ this project especially the API part did not work, I analyzed the reason, and at
   - type
   
 ## typescripts basics:
+ - declare is used to tell the compiler "this thing (usually a variable) exists already, and therefore can be referenced by other code, also there is no need to compile this statement into any JavaScript".
  - ensure type properties exist, for example function identity<T>(arg: T): T { console.log(arg.length); return arg; }
  - Explicitly supporting arrays function identity<T>(arg: T[]): T[] { console.log(arg.length); return arg; }
  - <T extends Programmer>(prog: T): void{ensure that class properties are formatted correctly}
