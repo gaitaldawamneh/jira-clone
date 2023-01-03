@@ -188,6 +188,7 @@ An Object created by literal notation or new Object
 
 ## functions I learned:
  - setTimeout, uniqueId, queryString.parse, omit,stringify,querystring.stringify(produce an URL query string),useRouteMatch()
+ - Object.keys().length
  - history.(functions)
  - constructor.name {Get the Class Name of an Object}
 ## functions created I learned:
