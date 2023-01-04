@@ -189,7 +189,7 @@ An Object created by literal notation or new Object
 ## functions I learned:
  -Object.entries(obj).forEach(([fieldName or the key, the key value])=>
  - setTimeout, uniqueId, queryString.parse, omit,stringify,querystring.stringify(produce an URL query string),useRouteMatch()
- - Object.keys().length, Object.entries().forEach, .flat()
+ - RegExp test(), Object.keys().length, Object.entries().forEach, .flat()
  - history.(functions)
  - constructor.name {Get the Class Name of an Object}
 ## functions created I learned:
