@@ -17,6 +17,10 @@ this project especially the API part did not work, I analyzed the reason, and at
    - validation util is super smart, it has been done with multiple arrow functions.
 
 ## database learned things:
+   - first of all asynccatch, it is an async that returns the latter that contains the await the given requestHandler.
+   - routes handles the http requests, by the controllers.
+   - the controllers, are a res,req async functions that awaits the typeorm functions like createEntity{the controllers uses the asynccatch async function too}
+   - typeorm functions 
    - implementing the static validations(which is multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
    - many-to-many relations is where A contains multiple instances of B
