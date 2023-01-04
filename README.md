@@ -20,7 +20,10 @@ this project especially the API part did not work, I analyzed the reason, and at
    - first of all asynccatch, it is an async that returns the latter that contains the await the given requestHandler.
    - routes handles the http requests, by the controllers.
    - the controllers, are a res,req async functions that awaits the typeorm functions like createEntity{the controllers uses the asynccatch async function too}
-   - typeorm functions 
+   - the return of the controllers functions are promise<T which is the extend the typeof BaseEntity>
+   - the controllers at the end send the data by res.respond interface({})
+   - typeorm functions take the type of typeorm classes that are extend the BaseEntity.
+   - 
    - implementing the static validations(which is multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
    - many-to-many relations is where A contains multiple instances of B
