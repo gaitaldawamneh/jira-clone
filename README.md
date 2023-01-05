@@ -17,19 +17,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - validation util is super smart, it has been done with multiple arrow functions.
 
 ## database learned things:
-   - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
-   - initializeExpress(){express,cor,json,urlencoded,}
-   - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
-   
-   - asynccatch, it is an async that returns the latter that contains the await the given requestHandler (function of RequestHandler interface and return the latter)
-   - routes handles the http requests, by the controllers.
-   - the controllers, are a res,req async functions that awaits the typeorm functions like createEntity{the controllers uses the asynccatch async function too}
-   - the return of the controllers functions are promise<T which is the extend the typeof BaseEntity>
-   - the controllers at the end send the data by res.respond interface({})
-   - typeorm functions take the type of typeorm classes that are extend the BaseEntity and return Promise<InstanceType<T>> 
-   - at the end of each typeorm function there is a validateAndSaveEntity function that takes instance as InstanceType<T>
-   - the validateAndSaveEntity gets the validation object be knowing the instance.constructor.name.
-   - then the generateErrors takes either the data instance that is instance of (type of BaseEntitiy) and the Constructor.validations that is taken from the entities typeorm object array 
+
    - implementing the static validations(which is multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
    - many-to-many relations is where A contains multiple instances of B
@@ -39,11 +27,29 @@ this project especially the API part did not work, I analyzed the reason, and at
    - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
 
 ## nice assembly techniques :
-
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
+   - async func(Promise<void>) does both await establishDatabaseConnection(), initializeExpress(); 
+   - initializeExpress(){express,cor,json,urlencoded,}
+   - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
+   
+   - asynccatch, it is an async that returns the latter that contains the await the given requestHandler (function of RequestHandler interface and return the latter)
+   - routes handles the http requests, by the controllers.
    - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js,putting RouteNotFoundError in the next method, RouteNotFoundError as a class constructs {message,code,status,data={}}{extrend Error{{name;message;stack?:}
-   - in a row thew handleError function comes with a type of ErrorRequestHandler
+   - the controllers, are a res,req async functions that awaits the typeorm functions like createEntity{the controllers uses the asynccatch async function too}
+   - the return of the controllers functions are promise<T which is the extend the typeof BaseEntity>
+   - the controllers at the end send the data by res.respond interface({})
+   - typeorm functions take the type of typeorm classes that are extend the BaseEntity and return Promise<InstanceType<T>> 
+   - at the end of each typeorm function there is a validateAndSaveEntity function that takes instance as InstanceType<T>
+   - the validateAndSaveEntity gets the validation object be knowing the instance.constructor.name.
+   - then the generateErrors takes either the data instance that is instance of (type of BaseEntitiy) and the Constructor.validations that is taken from the entities typeorm object array 
+   
+   
+   
+   
+   
+
+   - in a row the handleError function comes with a type of ErrorRequestHandler
    - the authentication (Bearer authentication) (token authentication) process starts with req.get('Authorization') getting the header then the bearer and token, if no token then it will throw an error.
    - if no token or no userid, it will throw an error.
    - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
