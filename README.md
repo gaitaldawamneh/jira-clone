@@ -17,7 +17,11 @@ this project especially the API part did not work, I analyzed the reason, and at
    - validation util is super smart, it has been done with multiple arrow functions.
 
 ## database learned things:
-   - first of all asynccatch, it is an async that returns the latter that contains the await the given requestHandler.
+   - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
+   - initializeExpress(){express,cor,json,urlencoded,}
+   - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
+   
+   - asynccatch, it is an async that returns the latter that contains the await the given requestHandler (function of RequestHandler interface and return the latter)
    - routes handles the http requests, by the controllers.
    - the controllers, are a res,req async functions that awaits the typeorm functions like createEntity{the controllers uses the asynccatch async function too}
    - the return of the controllers functions are promise<T which is the extend the typeof BaseEntity>
@@ -35,9 +39,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
 
 ## nice assembly techniques :
-   - async func(Promise<void>) does both  await establishDatabaseConnection(), initializeExpress(); 
-   - initializeExpress(){express,cor,json,urlencoded,}
-   - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
+
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
    - not putting the next() in middleware routes function, and putting the RouteNotFoundError after them in the main index.js,putting RouteNotFoundError in the next method, RouteNotFoundError as a class constructs {message,code,status,data={}}{extrend Error{{name;message;stack?:}
