@@ -23,7 +23,9 @@ this project especially the API part did not work, I analyzed the reason, and at
    - the return of the controllers functions are promise<T which is the extend the typeof BaseEntity>
    - the controllers at the end send the data by res.respond interface({})
    - typeorm functions take the type of typeorm classes that are extend the BaseEntity and return Promise<InstanceType<T>> 
-   - 
+   - at the end of each typeorm function there is a validateAndSaveEntity function that takes instance as InstanceType<T>
+   - the validateAndSaveEntity gets the validation object be knowing the instance.constructor.name.
+   - then the generateErrors takes either the data instance that is instance of (type of BaseEntitiy) and the Constructor.validations that is taken from the entities typeorm object array 
    - implementing the static validations(which is multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
    - many-to-many relations is where A contains multiple instances of B
