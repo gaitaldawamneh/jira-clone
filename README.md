@@ -22,7 +22,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - the controllers, are a res,req async functions that awaits the typeorm functions like createEntity{the controllers uses the asynccatch async function too}
    - the return of the controllers functions are promise<T which is the extend the typeof BaseEntity>
    - the controllers at the end send the data by res.respond interface({})
-   - typeorm functions take the type of typeorm classes that are extend the BaseEntity.
+   - typeorm functions take the type of typeorm classes that are extend the BaseEntity and return Promise<InstanceType<T>> 
    - 
    - implementing the static validations(which is multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
