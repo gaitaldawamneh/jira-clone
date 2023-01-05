@@ -216,8 +216,9 @@ An Object created by literal notation or new Object
 - import {} export {} from (ESmodules) not to forget you must put the type:module in the package.json
  export default mod1Function => import dh from 
  export {dh} => import {dh} from 
-
-## github basics:
+- A built-in function is a function that is already available in a programming language, application, or another tool that can be accessed by end users.
+- absolute import path, for example "baseUrl": "src", "paths": { "*": ["./*"] },"exclude": ["node_modules"],"include": ["./src/**/*.ts"]
+ ## github basics:
 - git remote -v(showing the origins)(if you have dev and master we can run git push dev master)
 <h1 align="center">A simplified Jira clone built with React and Node</h1>
 
