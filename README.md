@@ -27,10 +27,12 @@ this project especially the API part did not work, I analyzed the reason, and at
    - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
 
 ## nice assembly techniques :
+   
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
    - async func(Promise<void>) does both await establishDatabaseConnection(), initializeExpress(); 
    - initializeExpress(){express,cor,json,urlencoded,}
+   - creating a Response interface inside the express.d.ts file by declare namespace Express
    - use(addRespondToResponse())interface of RequestHandler{res.respond=(data):void{res.statur(200).send(data)}}
    
    - asynccatch, it is an async that returns the latter that contains the await the given requestHandler (function of RequestHandler interface and return the latter)
@@ -42,7 +44,8 @@ this project especially the API part did not work, I analyzed the reason, and at
    - typeorm functions take the type of typeorm classes that are extend the BaseEntity and return Promise<InstanceType<T>> 
    - at the end of each typeorm function there is a validateAndSaveEntity function that takes instance as InstanceType<T>
    - the validateAndSaveEntity gets the validation object be knowing the instance.constructor.name.
-   - then the generateErrors takes either the data instance that is instance of (type of BaseEntitiy) and the Constructor.validations that is taken from the entities typeorm object array 
+   - then the generateErrors takes either the data instance that is instance of (type of BaseEntitiy) and the Constructor.validations that is taken from the entities typeorm object array(validators)
+   -
    
    
    
