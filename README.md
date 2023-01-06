@@ -52,7 +52,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - getting the userId by the verifyToken function that does the payload = jwt.verify(token,process.env.JWT_SECRET)
    - then check if the result of the latter id isPlainObject,(in breaf,req.get('Authorization')=>bearer, token=>jwt.verify(token, process.env.JWT_SECRET)=>isPlainObject(payload)/throw=>return payload as{[key:string]:any})
    - payload = jwt.verify(token, process.env.JWT_SECRET) then validate if the payload is PlainObject by isPlainObject 
-   - findone() from user table in the database.
+   - findone() from user table in the database, if exist set the req.currentUser=user then next().
    - setting the req.currentUser = user; then next() of course.
    - 
    
@@ -62,7 +62,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    
    
 ## backend basics reqs learning:
-   - JSON Web Token Structure(JOSE Header, JWS payload, JWS signature)
+   - JSON Web Token Structure(JOSE Header(metadata about the type of token), JWS payload(contains verifiable security statements, identity of the user and the permissions), JWS signature(validate that the token is trustworthy))
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
