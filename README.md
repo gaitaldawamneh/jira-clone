@@ -45,7 +45,8 @@ this project especially the API part did not work, I analyzed the reason, and at
    - the validateAndSaveEntity gets the validation object be knowing the instance.constructor.name.
    - then the generateErrors function takes both the data instance that is instance of (type of BaseEntitiy) and the Constructor.validations that is taken from the entities typeorm object array(validators)
    - the authentication starts with the out route of '/'
-   - the authentication (Bearer authentication) (token authentication) process starts with req.get('Authorization') getting the header then the bearer and token, if no token then it will throw an error.
+   - the getAuthTokenFromRequest normal function takes the req as an argument then gets the (token), first it takes the header by req.get('Authorization') and then do the [bearer, token] = header.split(' ') to get the header
+ (token authentication) process starts with req.get('Authorization') getting the header then the bearer and token, if no token then it will throw an error.
    - if no token or no userid, it will throw an error.
    - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database.
