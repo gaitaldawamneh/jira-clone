@@ -62,6 +62,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    
    
 ## backend basics reqs learning:
+   - JSON Web Token Structure(JOSE Header, JWS payload, JWS signature)
    - req.originalUrl retains the original request
    - installing the packages for typescripts because sometimes it is installed wrongly for javascripts.
    - express middleware concept
