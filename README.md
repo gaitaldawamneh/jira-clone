@@ -27,7 +27,8 @@ this project especially the API part did not work, I analyzed the reason, and at
    - third parameter{onDelete:'SET NULL'} DO NOT DELETE but set to null
 
 ## nice assembly techniques :
-   
+   - throwing the error is done by di the throw for the class that is extend the CustomError(which is extend Error).
+  
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
    - async func(Promise<void>) does both await establishDatabaseConnection(), initializeExpress(); 
@@ -48,6 +49,8 @@ this project especially the API part did not work, I analyzed the reason, and at
    - the getAuthTokenFromRequest normal function takes the req as an argument.
    - then it gets the (token), first it takes the header by req.get('Authorization') and then do the [bearer, token] = header.split(' ') to get the header.
    - if no token or no userid, it will throw an error.
+   - getting the userId by the verifyToken function that does the payload = jwt.verify(token,process.env.JWT_SECRET)
+   - then check if the result of the latter id isPlainObject
    - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database.
    - setting the req.currentUser = user; then next() of course.
@@ -118,6 +121,7 @@ this project especially the API part did not work, I analyzed the reason, and at
   - type
   
 ## typescripts basics:
+ - 
  - declare is used to tell the compiler "this thing (usually a variable) exists already, and therefore can be referenced by other code, also there is no need to compile this statement into any JavaScript".
  - ensure type properties exist, for example function identity<T>(arg: T): T { console.log(arg.length); return arg; }
  - Explicitly supporting arrays function identity<T>(arg: T[]): T[] { console.log(arg.length); return arg; }
@@ -218,6 +222,7 @@ An Object created by literal notation or new Object
  handling the error situation if (error) return <PageError />;
 
 ## javascripts basics:
+ - isPlainObject (created by the {} object literal notation or constructed with new Object()) and resulted form a function.
  - Object.values(){array of a given object's own enumerable string-keyed property values}
  - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
  - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
