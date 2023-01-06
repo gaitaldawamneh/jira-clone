@@ -54,7 +54,7 @@ this project especially the API part did not work, I analyzed the reason, and at
    - payload = jwt.verify(token, process.env.JWT_SECRET) then validate if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database, if exist set the req.currentUser=user then next().
    - setting the req.currentUser = user; then next() of course.
-   - 
+   - handleError that returns the type o(error, _req, res, _next), f ErrorRequestHandler and have error ad an extra one argument (error, _req, res, _next), 
    
    
    - in a row the handleError function comes with a type of ErrorRequestHandler
