@@ -28,7 +28,6 @@ this project especially the API part did not work, I analyzed the reason, and at
 
 ## nice assembly techniques :
    - throwing the error is done by di the throw for the class that is extend the CustomError(which is extend Error).
-  
    - catchErrors takes a function of RequestHandler interface and return the latter.
    - not forgetting to put next for the middleware going to the next functions.
    - async func(Promise<void>) does both await establishDatabaseConnection(), initializeExpress(); 
@@ -54,7 +53,8 @@ this project especially the API part did not work, I analyzed the reason, and at
    - payload = jwt.verify(token, process.env.JWT_SECRET) then validate if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database, if exist set the req.currentUser=user then next().
    - setting the req.currentUser = user; then next() of course.
-   - handleError that returns the type o(error, _req, res, _next), f ErrorRequestHandler and have error ad an extra one argument (error, _req, res, _next), 
+   - at the end of the main index we have a request handler that send an argument to the next app.use by the giving the argument to the next() as next(new RouteNotFoundError(req.originalUrl)).
+   - handleError that exist as ErrorRequestHandler the type of ErrorRequestHandler(error, _req, res, _next),  and have error as an extra one argument (error, _req, res, _next), that takes the argument from the previous RequestHandler
    
    
    - in a row the handleError function comes with a type of ErrorRequestHandler
