@@ -51,10 +51,10 @@ this project especially the API part did not work, I analyzed the reason, and at
    - if no token or no userid, it will throw an error.
    - getting the userId by the verifyToken function that does the payload = jwt.verify(token,process.env.JWT_SECRET)
    - then check if the result of the latter id isPlainObject,(in breaf,req.get('Authorization')=>bearer, token=>jwt.verify(token, process.env.JWT_SECRET)=>isPlainObject(payload)/throw=>return payload as{[key:string]:any})
-   - payload = jwt.verify(token, process.env.JWT_SECRET) the find out if the payload is PlainObject by isPlainObject 
+   - payload = jwt.verify(token, process.env.JWT_SECRET) then validate if the payload is PlainObject by isPlainObject 
    - findone() from user table in the database.
    - setting the req.currentUser = user; then next() of course.
-   
+   - 
    
    
    - in a row the handleError function comes with a type of ErrorRequestHandler
