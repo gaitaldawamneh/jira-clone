@@ -223,6 +223,7 @@ An Object created by literal notation or new Object
  handling the error situation if (error) return <PageError />;
 
 ## javascripts basics:
+ - instanceof operator check whether an object belongs to a particular class. It also takes inheritance into account.
  - isPlainObject (created by the {} object literal notation or constructed with new Object()) and resulted form a function.
  - Object.values(){array of a given object's own enumerable string-keyed property values}.
  - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
