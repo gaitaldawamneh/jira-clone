@@ -223,9 +223,9 @@ An Object created by literal notation or new Object
 
 ## javascripts basics:
  - isPlainObject (created by the {} object literal notation or constructed with new Object()) and resulted form a function.
- - Object.values(){array of a given object's own enumerable string-keyed property values}
+ - Object.values(){array of a given object's own enumerable string-keyed property values}.
  - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
- - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt()
+ - path.extname(), .includes(),path.parse(root, dir, base, ext, name), __filename, __dirname, parseInt().
   # different between ESmodules and commonjs practically:
  commonjs:(standards used to implement modules on JavaScript.)
  ESmodules:(standarize how JS modules work and implement this features in browsers (which didn't previously support modules).)
