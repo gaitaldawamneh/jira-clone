@@ -172,8 +172,10 @@ this project especially the API part did not work, I analyzed the reason, and at
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 
 ## basics I learned:
+ - TCP is one of the two main ways to transmit data in a TCP/IP network. UDP, which is a best-effort connectionless protocol.
+ - Microservices is an architectural style that structures an application as a collection of services (Highly maintainable and testable Loosely coupled Independently deployable Organized around business capabilities Owned by a small team)
  - CLI is a Command Line Interface
- - Nest. js is a server-side Node. js framework that's great for building highly testable and maintainable backend applications, inspired by the Angular framework that ensures effortless testing and efficient codebase management. ,Modules help organize the code and split features into logical reusable units, Nest.JS is also highly configurable with ORMs.
+ - Nest. js is a server-side Node. js framework that's great for building highly testable and maintainable backend applications like Passport.js, inspired by the Angular framework that ensures effortless testing and efficient codebase management. ,Modules help organize the code and split features into logical reusable units, Nest.JS is also highly configurable with ORMs.
  - Enums allow a developer to define a set of named constants.
  - The static members of a class are accessed using the class name and dot notation
  - multiple arrow functions
