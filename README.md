@@ -172,6 +172,8 @@ this project especially the API part did not work, I analyzed the reason, and at
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 
 ## basics I learned:
+ - CLI is a Command Line Interface
+ - Nest. js is a server-side Node. js framework that's great for building highly testable and maintainable backend applications
  - Enums allow a developer to define a set of named constants.
  - The static members of a class are accessed using the class name and dot notation
  - multiple arrow functions
