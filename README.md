@@ -172,6 +172,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 
 ## basics I learned:
+ - Migrations are like version control for your database. It is used to modify and share application’s database schema. This section explains about how migrations works in TypeORM.
  - TCP is one of the two main ways to transmit data in a TCP/IP network. UDP, which is a best-effort connectionless protocol.
  - Microservices is an architectural style that structures an application as a collection of services (Highly maintainable and testable Loosely coupled Independently deployable Organized around business capabilities Owned by a small team)
  - CLI is a Command Line Interface
