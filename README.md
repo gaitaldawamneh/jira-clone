@@ -173,7 +173,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 
 ## basics I learned:
  - CLI is a Command Line Interface
- - Nest. js is a server-side Node. js framework that's great for building highly testable and maintainable backend applications
+ - Nest. js is a server-side Node. js framework that's great for building highly testable and maintainable backend applications, inspired by the Angular framework that ensures effortless testing and efficient codebase management. ,Modules help organize the code and split features into logical reusable units, Nest.JS is also highly configurable with ORMs.
  - Enums allow a developer to define a set of named constants.
  - The static members of a class are accessed using the class name and dot notation
  - multiple arrow functions
