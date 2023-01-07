@@ -7,7 +7,12 @@ npx create-react-app ghaith-clone-2
 </h6>
 
 this project especially the API part did not work, I analyzed the reason, and at the end, the database was not connecting so I merged two projects and two package.json files until it worked, it was an extreme experience to manipulate the two projects, and get out with one project even though a lot of errors faced me but I thrived on solving and make the project works, with learning what I was the face of code.
-
+## NestJS + TypeORM migrations:
+   - npm i -g @nestjs/cli
+   - nest new nestjs-typeorm
+   - npm install --save @nestjs/typeorm typeorm pg
+   - import { Module,TypeOrmModule}
+   - npx typeorm migration:create -n UserData -d src/migrations, write migrations for the entities like user entity
 ##  authentication errors:
    - Authentication token not found(no token)
    - Authentication token is invalid(false result when varifying the token)
@@ -172,6 +177,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 - <fragment> is used to wrap or group multiple elements without adding an extra node to the DOM.
 
 ## basics I learned:
+ - aria attributes (ARIA is shorthand for Accessible Rich Internet Applications. ARIA is a set of attributes you can add to HTML elements that define ways to make web content and applications accessible to users with disabilities who use assistive technologies (AT))
  - Migrations are like version control for your database. It is used to modify and share application’s database schema. This section explains about how migrations works in TypeORM.
  - TCP is one of the two main ways to transmit data in a TCP/IP network. UDP, which is a best-effort connectionless protocol.
  - Microservices is an architectural style that structures an application as a collection of services (Highly maintainable and testable Loosely coupled Independently deployable Organized around business capabilities Owned by a small team)
