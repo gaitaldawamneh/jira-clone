@@ -133,7 +133,7 @@ this project especially the API part did not work, I analyzed the reason, and at
  - Explicitly supporting arrays function identity<T>(arg: T[]): T[] { console.log(arg.length); return arg; }
  - <T extends Programmer>(prog: T): void{ensure that class properties are formatted correctly}
  - class Department<T> {private employees:Array<T> = new Array<T>();add(employee: T): void {this.employees.push(employee)}{manipulate typed arrays.}
- -validating that a key exists on an object, for example function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key]; }
+ - validating that a key exists on an object, for example function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key]; }
  - wrapping your API handlers in one class especially in API services, for example, class APIService extends API { public getRecords<T, U> (endpoint: string, params: T[]): U[]{}}.
  - 
  - Primitive, it is data that is not an object and has no methods or properties(string, number, bigint, boolean, undefined, symbol, null)
