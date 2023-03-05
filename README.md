@@ -104,7 +104,28 @@ this project especially the API part did not work, I analyzed the reason, and at
   - A migration is just a single file with sql queries to update a database schema and apply new changes to an existing database.
   - @entity
   - @column
+## postgresql FindOneOptions:
+  -comment,order,cache,where,transaction,relations,join(what relations should be loaded),select(what columns should be retrieved),
+  
 
+## postgresql functions and techniques:
+  - .create:T, 
+  - .save:Promise<this>
+  - .findOne:findOne<T|undefined>
+  - instance extends EntityConstructor(type of) to use the methods of BaseEntity like .create (instance.name)
+  - wheras extends EntityInstance to store the data and (instance.constructor.name) and it can also use the methods of BaseEntity of the father parent class
+  - EntityConstructor= typeof Project : Promise<InstanceType<T>> 
+  - EntityInstance Project | User (we can use the methods of BaseEntity .findone ,etc...)
+  - 
+  - const entities:{[key:string]:EntityConstructor}={Comment, Issue,Project,User};
+  - findEntityOrThrow<T ex EntityConstructor>(Constructor:T,id:N/S,FindOneOptions):Promise<InstanceType<T>>{const instance = await findEntityOrThrow(id, options);
+  - validateAndSaveEntity<SAME AS MENTIONED ABOVE>(instanse:T):Promise<T>{const Constructor = entities[instance.constructor.name];
+  if ('validations' in Constructor);generateErrors(instance, Constructor.validations) const save = instance.save();return save as Promise<T>}
+  - createEntity= async<T extends EntityConstructor>(Constructor:T,input:partial<instanceof<T>>):promise<instanceof<T>>{const instance=Constructor.create(input) return validateAndSaveEntity(instance as InstanceType<T>)}
+  - updateEntity<T extends EntityConstructor>(Constructor,id:number|string,input:partial<instanceof<T>>){const instance=await findEntitOrThrow<T extends EntityConstructor>();Object.assign(instance, input);return validateAndSaveEntity(instance);}
+  - deleteEntity findEntityOrThrow;instance.remove();return instance;
+ 
+ 
 ## preparing for typescripts:
 
   - Unlike an interface, the type alias can also be used for other types such as primitives, unions, and tuples.
