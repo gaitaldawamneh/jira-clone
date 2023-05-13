@@ -1,7 +1,7 @@
-<h1 align="center">Notes to be taken from this project:</h1>
-<h6 align="center">keep in mind that this project has been taken just in order to take notes from it.
+<h1 align="center">While both programming and learning i wrote some notes to learn from:</h1>
+<h6 align="center">keep in mind that this project has alot of things to learn from.
  
-npx create-react-app ghaith-clone-2
+npx create-react-app jira-api
 
 
 </h6>
@@ -21,7 +21,7 @@ this project especially the API part did not work, I analyzed the reason, and at
 ## typescripts utils:
    - validation util is super smart, it has been done with multiple arrow functions.
 
-## database learned things:
+## What to learn from database:
 
    - implementing the static validations(which is multi arrows functions) under the Entity class
    - using enums for database, (Enums allow a developer to define a set of named constants).
